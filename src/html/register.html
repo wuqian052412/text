@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" href="../css/register.css">
+	<link rel="stylesheet" href="../css/var.css">
+	<link rel="stylesheet" href="../lib/jquery-TTCarousel/jquery-TTCarousel.css">
+	<script src="../js/require.js" data-main="../js/register.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header clearfix">
+			<div class="register-bar">
+				<a href="login.html">立即登录</a>
+				已经有ZOL商城账号？
+			</div>
+			<div class="logo">
+				<a href="../index.html">
+					<img src="../img/logow.png" alt="">
+					<p>中关村在线旗下网上商城</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="register-wrap clearfix">
+		<div class="title">30秒快速注册，加入ZOL商城</div>
+		<form action="get" id="register">
+			<div class="register-module">
+				<ul class="register-tab clearfix">
+					<li class="current">
+						<span class="phone-number">用手机号注册</span>
+					</li>
+				</ul>
+				<div class="register-phone-number">
+					<p class="register-form">
+						<label for="number">手机号:</label>
+						<input type="text" id="number">
+						<!-- <div class="tips">请填写手机号码</div> -->
+					</p>
+					<p class="register-form">
+						<label for="yz">验证码:</label>
+						<input type="text" id="yz">
+						<!-- <div class="tips">请填写图片验证码</div> -->
+					</p>
+					<p class="register-form">
+						<label for="number-yz">验证码:</label>
+						<input type="text" id="number-yz">
+						<!-- <div class="tips">请填写手机号码，然后点击获取验证码</div> -->
+					</p>
+					<p class="register-form">
+						<label for="password">密码:</label>
+						<input type="text" id="password">
+						<!-- <div class="tips">6-16位字母和数字组合，不可用特殊字符</div> -->
+					</p>
+					<p class="register-form">
+						<label for="repassword">确认密码:</label>
+						<input type="text" id="repassword">
+						<!-- <div class="tips">再次输入密码</div> -->
+					</p>
+					<label for="agrement">
+						<input type="checkbox" value='1'>同意
+						<a href="#">《商城用户协议》</a>
+						<a href="#">《隐私权说明》</a>
+					</label>
+					<input type="button" value="注册" class="register-btn no" disabled>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="footer">
+		<div class="wrapper clearfix">
+			<div class="about">
+				<a href="#">关于ZOL商城</a>|
+				<a href="#">联系我们</a>|
+				<a href="#">帮助中心</a>
+			</div>
+			<div class="copyright">
+				©2017. 中关村在线 版权所有
+			</div>
+		</div>
+	</div>
+</body>
+</html>

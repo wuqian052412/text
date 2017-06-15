@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu { margin: 0; padding: 0; }
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details { display: block; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th { text-align: left; font-weight: normal; }
+
+html, body, fieldset, img, iframe, abbr { border: 0; }
+
+i, cite, em, var, address, dfn { font-style: normal; }
+
+[hidefocus], summary { outline: 0; }
+
+li { list-style: none; }
+
+h1, h2, h3, h4, h5, h6, small { font-size: 100%; }
+
+sup, sub { font-size: 83%; }
+
+pre, code, kbd, samp { font-family: inherit; }
+
+q:before, q:after { content: none; }
+
+textarea { overflow: auto; resize: none; }
+
+label, summary { cursor: default; }
+
+a, button { cursor: pointer; }
+
+del, ins, u, s, a, a:hover { text-decoration: none; }
+
+body, textarea, input, button, select, keygen, legend { font: 12px/1.14 'Microsoft YaHei',\5b8b\4f53; color: #333; outline: 0; }
+
+html body { font: 12px/1.14 'Microsoft YaHei',\5b8b\4f53; color: #333; outline: 0; }
+
+body { background: #fff; }
+
+img { vertical-align: middle; }
+
+/* 顶部 */
+.zc-topbar { height: 30px; font-size: 12px; /* overflow: hidden; */ background-color: #F5F5F5; border-bottom: 1px solid #E6E6E6; line-height: 30px; margin-bottom: 8px; }
+
+.wrapper { width: 1200px; margin: 0 auto; }
+
+.zc-login-info { float: left; }
+
+.zc-login-info .zc-back-home a { color: #000; }
+
+.zc-login-info a:hover { color: #CE1A1B; text-decoration: underline; }
+
+.zc-login-info .zc-login { margin-left: 20px; }
+
+.zc-login-info .zc-register { margin-left: 20px; }
+
+.zc-quick-menu { float: right; }
+
+.zc-quick-menu .active { background-color: #fff; }
+
+.zc-quick-menu li { float: left; padding: 0 10px; position: relative; }
+
+.zc-quick-menu li .zc-my-center-bd { z-index: 100; display: none; position: absolute; top: 29px; left: 0; padding: 3px 9px; width: 88px; border: 1px solid #ededed; background: #fff; }
+
+.zc-quick-menu li .zc-mobile-bd { z-index: 100; display: none; position: absolute; top: 29px; left: 0; padding: 20px; width: 130px; height: 130px; border: 1px solid #ededed; background: #fff; }
+
+.zc-quick-menu li .zc-service-tel { z-index: 100; display: none; position: absolute; top: 29px; right: 0; padding: 3px 9px; width: 80px; border: 1px solid #ededed; font: 12px/28px arial; text-align: right; background: #fff; }
+
+.zc-quick-menu li a { color: #000; }
+
+.zc-quick-menu li a:hover { color: #CE1A1B; text-decoration: underline; }
+
+/* 头部 */
+.main .header { width: 960px; margin: 0px auto; padding: 30px 0px; }
+
+.main .header .head-l { float: left; }
+
+.main .header .head-l a { color: #134ba0; text-decoration: none; cursor: pointer; }
+
+.main .header .head-l a .img1 { float: left; display: block; width: 212px; height: 40px; border: 0; }
+
+.main .header .head-l a .img2 { float: left; display: block; width: 165px; height: 40px; border: 0; }
+
+.main .header .head-r { float: right; padding: 2px 0 0; }
+
+.main .header .head-r ul li { float: left; width: 90px; background-color: #e6e6e6; text-align: center; padding: 0px 14px 0px 0px; font: 14px/36px "Microsoft YaHei", 微软雅黑; }
+
+.main .header .head-r ul .s1 { padding: 0 14px; color: #fff; background-color: #e02d2d; }
+
+.main .car-top { margin-top: 10px; }
+
+.main .car-top .car-status { text-align: right; }
+
+.main .car-top .car-status p { padding: 7px 0 10px 0; }
+
+.main .car-top .car-status ul { float: right; }
+
+.main .car-top .car-status ul li { float: left; padding: 0 8px; height: 22px; line-height: 22px; color: #666; }
+
+.main .car-top .car-status ul li button { color: #FFF; background-color: red; }
+
+.main .car-top .car-status ul .w2 { color: #ff0000; }
+
+.main .content { margin-top: 30px; border-top: 2px solid #e02d2d; }
+
+.main .content .bar { background-color: #f5f5f5; }
+
+.main .content .bar ul li { float: left; padding: 0 50px; height: 36px; line-height: 36px; font-size: 14px; text-align: center; }
+
+.main .content .bar ul .d1 { padding: 0 200px; }
+
+.main .content .list { margin-top: 10px; }
+
+.main .content .list ul li .shop { height: 40px; line-height: 40px; font-size: 14px; }
+
+.main .content .list ul li .detail { border: 1px solid #f5f5f5; padding: 10px 0; }
+
+.main .content .list ul li .detail ul li { float: left; padding: 10px 20px 10px 20px; text-align: center; }
+
+.main .content .list ul li .detail .s-info { width: 357px; }
+
+.main .content .list ul li .detail .s-info input { float: left; margin: 24px 10px 0 0; }
+
+.main .content .list ul li .detail .s-info .pic { float: left; width: 80px; height: 80px; border: 1px solid #ccc; line-height: 58px; text-align: center; background: #fff; }
+
+.main .content .list ul li .detail .s-info .pic img { width: 80px; height: 80px; border: 0; }
+
+.main .content .list ul li .detail .s-info .info-box { float: left; width: 240px; padding: 0 0 0 10px; line-height: 20px; text-align: left; }
+
+.main .content .list ul li .detail .s-info .info-box a:hover { color: red; }
+
+.main .content .list ul li .detail .sprice { width: 102px; }
+
+.main .content .list ul li .detail .sprice .yj { display: block; padding-top: 13px; color: #999; text-decoration: line-through; }
+
+.main .content .list ul li .detail .s-amount { width: 130px; }
+
+.main .content .list ul li .detail .s-amount .buy-num { position: relative; width: 110px; height: 20px; padding: 31px 0; text-align: center; }
+
+.main .content .list ul li .detail .s-amount .buy-num .jian { margin: 5px 8px 0 10px; }
+
+.main .content .list ul li .detail .s-amount .buy-num .jian, .main .content .list ul li .detail .s-amount .buy-num .jia { float: left; width: 10px; height: 10px; line-height: 10px; background: #fff; color: #333; text-align: center; border: 1px solid #ccc; overflow: hidden; }
+
+.main .content .list ul li .detail .s-amount .buy-num input { width: 28px; height: 16px; float: left; padding: 1px 3px; text-align: right; }
+
+.main .content .list ul li .detail .s-amount .buy-num .jia { margin: 5px 0 0 8px; }
+
+.main .content .list ul li .detail .s-agio { width: 101px; }
+
+.main .content .list ul li .detail .s-agio .tuan, .main .content .list ul li .detail .s-agio .time { display: block; background-color: #ce1a1b; font-size: 12px; height: 18px; line-height: 18px; padding: 0 3px; }
+
+.main .content .list ul li .detail .s-agio .time { background-color: #fff; }
+
+.main .content .list ul li .detail .price { width: 87px; }
+
+.main .content .list ul li .detail .price span { color: #ff0000; }
+
+.main .content .list ul li .detail .del { width: 61px; }
+
+.main .content .list ul li .detail .del a { display: block; line-height: 20px; }
+
+.main .content .list .total { padding: 0 10px 0 0; height: 52px; line-height: 52px; text-align: right; }
+
+.main .content .list .total .to-price { color: #ff0000; font-size: 16px; }
+
+.main .content .list .count { padding: 0 0 0 12px; height: 33px; border: 1px solid #e3e3e3; line-height: 33px; }
+
+.main .content .list .count span { display: block; background-color: #ff0000; width: 60px; float: right; text-align: center; color: #fff; }

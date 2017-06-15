@@ -1,0 +1,98 @@
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu { margin: 0; padding: 0; }
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details { display: block; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th { text-align: left; font-weight: normal; }
+
+html, body, fieldset, img, iframe, abbr { border: 0; }
+
+i, cite, em, var, address, dfn { font-style: normal; }
+
+[hidefocus], summary { outline: 0; }
+
+li { list-style: none; }
+
+h1, h2, h3, h4, h5, h6, small { font-size: 100%; }
+
+sup, sub { font-size: 83%; }
+
+pre, code, kbd, samp { font-family: inherit; }
+
+q:before, q:after { content: none; }
+
+textarea { overflow: auto; resize: none; }
+
+label, summary { cursor: default; }
+
+a, button { cursor: pointer; }
+
+del, ins, u, s, a, a:hover { text-decoration: none; }
+
+body, textarea, input, button, select, keygen, legend { font: 12px/1.14 'Microsoft YaHei',\5b8b\4f53; color: #333; outline: 0; }
+
+html body { font: 12px/1.14 'Microsoft YaHei',\5b8b\4f53; color: #333; outline: 0; }
+
+body { background: #fff; }
+
+img { vertical-align: middle; }
+
+.wrapper { width: 990px; margin: 0 auto; }
+
+.wrapper .header { padding-top: 14px; padding: 20px 0; }
+
+.wrapper .header .register-bar { float: right; padding: 21px 0 0; font-size: 14px; line-height: 22px; }
+
+.wrapper .header .register-bar a { float: right; height: 16px; padding: 3px 10px; color: #c00; font: normal 14px/14px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1"; }
+
+.wrapper .header .logo { float: left; }
+
+.wrapper .header .logo a { float: left; color: #000; }
+
+.wrapper .header .logo a img { float: left; width: 182px; height: 60px; }
+
+.wrapper .header .logo a p { float: left; margin: 8px 0 0 8px; padding-left: 10px; font: 14px/44px simsun; color: #666; border-left: 1px solid #e6e6e6; cursor: pointer; }
+
+.register-wrap { padding: 0 0 100px; border: 1px solid #e6e6e6; width: 980px; margin: auto; }
+
+.register-wrap .title { padding: 16px 0 16px 90px; background: #fafafa; font: 18px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1"; color: #999; }
+
+.register-wrap form .register-module { float: left; padding: 30px 0 0 89px; width: 500px; }
+
+.register-wrap form .register-module .register-tab { height: 39px; border-bottom: 1px solid #e6e6e6; }
+
+.register-wrap form .register-module .register-tab li { float: left; position: relative; width: 250px; border: 1px solid #e6e6e6; border-bottom: 0 none; text-align: center; }
+
+.register-wrap form .register-module .register-tab .current { margin: 0 -1px -1px; padding: 0 0 2px; border-top: 2px solid #e02d2d; background: #fff; cursor: default; }
+
+.register-wrap form .register-module .register-tab .current span { color: #c00; line-height: 36px; padding: 0 0 0 20px; display: inline-block; font: 18px/38px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1"; }
+
+.register-wrap form .register-module .register-phone-number { padding: 30px 0 0; /* .tips{position: absolute;top: 47px;left: 83px;color: #aaa;} */ }
+
+.register-wrap form .register-module .register-phone-number .register-form { position: relative; margin: 0 0 42px; padding: 0 0 0 83px; zoom: 1; }
+
+.register-wrap form .register-module .register-phone-number .register-form label { position: absolute; top: 0; left: 0; width: 83px; font: 14px/40px "Arial"; text-align: right; color: #666; }
+
+.register-wrap form .register-module .register-phone-number .register-form input { display: block; margin: 0 10px 0 0; padding: 8px 5px; width: 278px; height: 22px; border: 1px solid #ccc; }
+
+.register-wrap form .register-module .register-phone-number .agreement { display: block; padding: 0 0 0 83px; height: 32px; font: 12px/32px "Arial"; color: #999; }
+
+.register-wrap form .register-module .register-phone-number .agreement input { margin: 0 8px 0 0; }
+
+.register-wrap form .register-module .register-phone-number .agreement a { color: #134ba0; text-decoration: none; }
+
+.register-wrap form .register-module .register-phone-number .register-btn { display: block; margin: 20px 0 0 83px; width: 290px; height: 40px; font: bold 14px/40px "Arial"; color: #fff; text-align: center; border: 0 none; background-color: red; cursor: pointer; }
+
+.register-wrap form .register-module .register-phone-number .no { background-color: #ccc; }
+
+.footer { margin: 50px 0 0; padding: 12px 0 25px; border-top: 1px solid #dcdcdc; }
+
+.footer .wrapper { width: 990px; margin: 0 auto; }
+
+.footer .wrapper .about { float: left; margin: 0 0 0 -10px; color: #ccc; }
+
+.footer .wrapper .about a { margin: 0 10px; color: #666; }
+
+.footer .wrapper .copyright { float: right; color: #666; }

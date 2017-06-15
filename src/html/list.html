@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>团购</title>
+	<link rel="stylesheet" href="../css/list.css">
+	<link rel="stylesheet" href="../css/var.css">
+	<link rel="stylesheet" href="../lib/jquery-TTCarousel/jquery-TTCarousel.css">
+	<script src="../js/require.js" data-main="../js/list.js"></script>
+</head>
+<body>
+	<!-- header-top -->
+	<div class="zc-topbar">
+	    <div class="wrapper clearfix">
+            <div class="zc-login-info">
+                <span class="zc-back-home">
+               		 <a href="../index.html">ZOL商城首页</a>|
+                </span>
+                <span class="zc-login">中关村在线</span>                       
+            </div>        
+            <ul class="zc-quick-menu">
+                <li>
+                	<a href="login.html">请登录</a>|
+                </li>            
+                <li class="zc-my-center">                
+                	<a href="register.html" class="zc-hd">免费注册</a>|                          
+                </li>            
+                    <li>
+                	<a href="#" id="shop-cart-num">我的订单
+                	</a>|
+                </li>            
+                <li>
+                	<a href="#">关注团购</a>|
+                </li>                       
+                <li class="zc-mobile">                
+                    <a href="#">订购推荐</a>|                           
+                </li>           
+                <li><a href="#">帮助中心</a></li>                  
+      		</ul>    
+       	</div>
+ 	</div>
+ 		<!-- 头部 -->
+<!-- 搜索 -->
+	<div class="header clearfix">
+	 	<div class="wrapper clearfix"> 
+			<div class="logo">
+				<h1>
+					<a title="ZOL商城" href="../index.html" class="mall-logo"></a>
+				</h1>
+				
+				<div class="logo-right-box">
+					<p class="tuan">团购</p>
+				</div>
+			</div>
+			<div class="search-box">
+				<form action="#" method="get">
+					<input type="hidden" name="c" value="List">
+					<div class="search">
+						<input name="keyword" type="text" class="search-text" autocomplete="off" value="">
+						<input type="submit" value="搜 索" class="search-btn" hidefocus="true"></div>
+					<input type="hidden" name="spm" value="921">
+				</form>
+		                <!-- 搜索热词 搜索推荐 -->
+		        <div class="hot-search" id="noresearch_keyword">
+                    <a href="#" target="_blank" title="小米">小米</a>
+                    <a href="#" target="_blank" title="乐视">乐视</a>
+                    <a href="#" target="_blank" title="华为">华为</a>
+                    <a href="#" target="_blank" title="DIY主机降1000元">DIY主机降1000元</a>
+                    <a href="#" target="_blank" title="超极本降1400元">超极本降1400元</a>
+                    <a href="#" target="_blank" title="热销机械键盘">热销机械键盘</a>
+		        </div>    
+		                     
+		                <!-- end  -->
+			</div>
+		    <div class="ad-div">
+		    	<a href="#" target="_blank">
+		        	<img src="../img/ad.jpg" alt="专注数码_服务到家">
+		        </a>
+		    </div>
+		</div>    
+    </div>
+	<!-- 导航 -->
+	<div class="nav-box">
+		<div class="category-nav-container">
+			<h2 class="category-nav-title">团购商品分类</h2>
+			<div class="category-menu-nav">
+				<ul class="menu-nav-container clearfix">
+					<li class="tb">
+						<div class="type">
+							手机通讯
+							<span class="classify-icon.icon1"></span>
+						</div>
+						<div class="contain clearfix">
+							<a href="#">手机通讯</a>
+							<a href="#">手机配件</a>
+						</div>
+						<div class="category-menu-content">
+							<div class="left">
+								<dl class="service">
+									<dt>
+										<a href="#">服务保障</a>
+									</dt>
+									<dd class="clearfix">
+										<a href="#">
+											行货保证
+										</a>
+										<a href="#">
+											发票保障
+										</a>
+										<a href="#">
+											24小时发货
+										</a>
+										<a href="#">
+											顺丰包邮
+										</a>
+										<a href="#">
+											无忧退换
+										</a>
+										<a href="#">
+											先行赔付
+										</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										<a href="#">手机通讯</a>
+									</dt>
+									<dd>
+										<a href="#">手机</a>|
+									</dd>
+									<dt>
+										<a href="#">手机配件</a>
+									</dt>
+									<dd>
+										<a href="#">手机保护套</a>|
+										<a href="#">移动电源</a>|
+										<a href="#">手机保护套</a>|
+										<a href="#">移动电源</a>|
+										<a href="#">手机电源</a>|
+										<a href="#">移动电池</a>|
+									</dd>
+								</dl>
+								<ul class="brands-list">
+									<li>
+										<a href="$"><img src="../img/ph01.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph02.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph03.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph04.jpg" alt=""></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="tb">
+						<div class="type">
+							手机通讯
+							<span class="classify-icon.icon1"></span>
+						</div>
+						<div class="contain">
+							<a href="#">手机通讯</a>
+							<a href="#">手机配件</a>
+						</div>
+						<div class="category-menu-content">
+							<div class="left">
+								<dl class="service">
+									<dt>
+										<a href="#">服务保障</a>
+									</dt>
+									<dd class="clearfix">
+										<a href="#">
+											行货保证
+										</a>
+										<a href="#">
+											发票保障
+										</a>
+										<a href="#">
+											24小时发货
+										</a>
+										<a href="#">
+											顺丰包邮
+										</a>
+										<a href="#">
+											无忧退换
+										</a>
+										<a href="#">
+											先行赔付
+										</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										<a href="#">电脑配件</a>
+									</dt>
+									<dd>
+										<a href="#">手机</a>|
+									</dd>
+									<dt>
+										<a href="#">手机配件</a>
+									</dt>
+									<dd>
+										<a href="#">手机保护套</a>|
+										<a href="#">移动电源</a>|
+										<a href="#">手机保护套</a>|
+										<a href="#">移动电源</a>|
+										<a href="#">手机电源</a>|
+										<a href="#">移动电池</a>|
+									</dd>
+								</dl>
+								<ul class="brands-list">
+									<li>
+										<a href="$"><img src="../img/ph01.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph02.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph03.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph04.jpg" alt=""></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="tb">
+						<div class="type">
+							手机通讯
+							<span class="classify-icon.icon1"></span>
+						</div>
+						<div class="contain">
+							<a href="#">手机通讯</a>
+							<a href="#">手机配件</a>
+						</div>
+						<div class="category-menu-content">
+							<div class="left">
+								<dl class="service">
+									<dt>
+										<a href="#">服务保障</a>
+									</dt>
+									<dd class="clearfix">
+										<a href="#">
+											行货保证
+										</a>
+										<a href="#">
+											发票保障
+										</a>
+										<a href="#">
+											24小时发货
+										</a>
+										<a href="#">
+											顺丰包邮
+										</a>
+										<a href="#">
+											无忧退换
+										</a>
+										<a href="#">
+											先行赔付
+										</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										<a href="#">手机通讯</a>
+									</dt>
+									<dd>
+										<a href="#">手机</a>|
+									</dd>
+									<dt>
+										<a href="#">手机配件</a>
+									</dt>
+									<dd>
+										<a href="#">手机保护套</a>|
+										<a href="#">移动电源</a>|
+										<a href="#">手机保护套</a>|
+										<a href="#">移动电源</a>|
+										<a href="#">手机电源</a>|
+										<a href="#">移动电池</a>|
+									</dd>
+								</dl>
+								<ul class="brands-list">
+									<li>
+										<a href="$"><img src="../img/ph01.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph02.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph03.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph04.jpg" alt=""></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="tb">
+						<div class="type">
+							手机通讯
+							<span class="classify-icon.icon1"></span>
+						</div>
+						<div class="contain">
+							<a href="#">手机通讯</a>
+							<a href="#">手机配件</a>
+						</div>
+						<div class="category-menu-content">
+							<div class="left">
+								<dl class="service">
+									<dt>
+										<a href="#">服务保障</a>
+									</dt>
+									<dd class="clearfix">
+										<a href="#">
+											行货保证
+										</a>
+										<a href="#">
+											发票保障
+										</a>
+										<a href="#">
+											24小时发货
+										</a>
+										<a href="#">
+											顺丰包邮
+										</a>
+										<a href="#">
+											无忧退换
+										</a>
+										<a href="#">
+											先行赔付
+										</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										<a href="#">手机通讯</a>
+									</dt>
+									<dd>
+										<a href="#">手机</a>|
+									</dd>
+									<dt>
+										<a href="#">手机配件</a>
+									</dt>
+									<dd>
+										<a href="#">手机保护套</a>|
+										<a href="#">移动电源</a>|
+										<a href="#">手机保护套</a>|
+										<a href="#">移动电源</a>|
+										<a href="#">手机电源</a>|
+										<a href="#">移动电池</a>|
+									</dd>
+								</dl>
+								<ul class="brands-list">
+									<li>
+										<a href="$"><img src="../img/ph01.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph02.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph03.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph04.jpg" alt=""></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="tb">
+						<div class="type">
+							手机通讯
+							<span class="classify-icon.icon1"></span>
+						</div>
+						<div class="contain">
+							<a href="#">手机通讯</a>
+							<a href="#">手机配件</a>
+						</div>
+						<div class="category-menu-content">
+							<div class="left">
+								<dl class="service">
+									<dt>
+										<a href="#">服务保障</a>
+									</dt>
+									<dd class="clearfix">
+										<a href="#">
+											行货保证
+										</a>
+										<a href="#">
+											发票保障
+										</a>
+										<a href="#">
+											24小时发货
+										</a>
+										<a href="#">
+											顺丰包邮
+										</a>
+										<a href="#">
+											无忧退换
+										</a>
+										<a href="#">
+											先行赔付
+										</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										<a href="#">手机通讯</a>
+									</dt>
+									<dd>
+										<a href="#">手机</a>|
+									</dd>
+									<dt>
+										<a href="#">手机配件</a>
+									</dt>
+									<dd>
+										<a href="#">手机保护套</a>|
+										<a href="#">移动电源</a>|
+										<a href="#">手机保护套</a>|
+										<a href="#">移动电源</a>|
+										<a href="#">手机电源</a>|
+										<a href="#">移动电池</a>|
+									</dd>
+								</dl>
+								<ul class="brands-list">
+									<li>
+										<a href="$"><img src="../img/ph01.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph02.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph03.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph04.jpg" alt=""></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="tb">
+						<div class="type">
+							手机通讯
+							<span class="classify-icon.icon1"></span>
+						</div>
+						<div class="contain">
+							<a href="#">手机通讯</a>
+							<a href="#">手机配件</a>
+						</div>
+						<div class="category-menu-content">
+							<div class="left">
+								<dl class="service">
+									<dt>
+										<a href="#">服务保障</a>
+									</dt>
+									<dd class="clearfix">
+										<a href="#">
+											行货保证
+										</a>
+										<a href="#">
+											发票保障
+										</a>
+										<a href="#">
+											24小时发货
+										</a>
+										<a href="#">
+											顺丰包邮
+										</a>
+										<a href="#">
+											无忧退换
+										</a>
+										<a href="#">
+											先行赔付
+										</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										<a href="#">手机通讯</a>
+									</dt>
+									<dd>
+										<a href="#">手机</a>|
+									</dd>
+									<dt>
+										<a href="#">手机配件</a>
+									</dt>
+									<dd>
+										<a href="#">手机保护套</a>|
+										<a href="#">移动电源</a>|
+										<a href="#">手机保护套</a>|
+										<a href="#">移动电源</a>|
+										<a href="#">手机电源</a>|
+										<a href="#">移动电池</a>|
+									</dd>
+								</dl>
+								<ul class="brands-list">
+									<li>
+										<a href="$"><img src="../img/ph01.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph02.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph03.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph04.jpg" alt=""></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="tb">
+						<div class="type">
+							手机通讯
+							<span class="classify-icon.icon1"></span>
+						</div>
+						<div class="contain">
+							<a href="#">手机通讯</a>
+							<a href="#">手机配件</a>
+						</div>
+						<div class="category-menu-content">
+							<div class="left">
+								<dl class="service">
+									<dt>
+										<a href="#">服务保障</a>
+									</dt>
+									<dd class="clearfix">
+										<a href="#">
+											行货保证
+										</a>
+										<a href="#">
+											发票保障
+										</a>
+										<a href="#">
+											24小时发货
+										</a>
+										<a href="#">
+											顺丰包邮
+										</a>
+										<a href="#">
+											无忧退换
+										</a>
+										<a href="#">
+											先行赔付
+										</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										<a href="#">手机通讯</a>
+									</dt>
+									<dd>
+										<a href="#">手机</a>|
+									</dd>
+									<dt>
+										<a href="#">手机配件</a>
+									</dt>
+									<dd>
+										<a href="#">手机保护套</a>|
+										<a href="#">移动电源</a>|
+										<a href="#">手机保护套</a>|
+										<a href="#">移动电源</a>|
+										<a href="#">手机电源</a>|
+										<a href="#">移动电池</a>|
+									</dd>
+								</dl>
+								<ul class="brands-list">
+									<li>
+										<a href="$"><img src="../img/ph01.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph02.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph03.jpg" alt=""></a>
+									</li>
+									<li>
+										<a href="$"><img src="../img/ph04.jpg" alt=""></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<ul class="nav clearfix">
+            <li><a href="../index.html" target="_blank">首页</a></li>
+            <li><a href="list.html" target="_blank">本地团购</a></li>
+            <li><a href="#" target="_blank">单品团</a></li>
+            <li><a href="#" target="_blank">即将开团</a></li>            
+		</ul>
+        <div class="nav-tips">
+        	<a href="#" target="_blank">荣耀8青春版、荣耀V9新品现货抢！</a>
+        </div>
+	</div>
+	<!-- 主要 -->
+	<div class="main wrapper">
+		<!-- banner图块 -->
+		<div class="clearfix">
+			<div class="main-right">
+				<div class="manual">
+					<a href="#"><img src="../img/r-01.jpg" alt=""></a>
+				</div>
+				<div class="manual">
+					<a href="#"><img src="../img/r-02.jpg" alt=""></a>
+				</div>
+			</div>
+			<div class="main-left">
+				<div class="banner">
+					<!-- <ul>
+						<li><a href="#"><img src="img/01.jpg" alt=""></li></a>
+					</ul> -->
+				</div>
+				<ul class="main-list">
+					<li>
+						<h5 class="name"><a href="#">惠普暗影精灵2 Pro</a></h5>
+						<p class="price">5299元火爆促销！</p>
+						<a href="#" class="pic"><img src="../img/pic1.jpg" alt=""></a>
+					</li>
+					<li>
+						<h5 class="name"><a href="#">惠普暗影精灵2 Pro</a></h5>
+						<p class="price">5299元火爆促销！</p>
+						<a href="#" class="pic"><img src="../img/pic1.jpg" alt=""></a>
+					</li>
+					<li>
+						<h5 class="name"><a href="#">惠普暗影精灵2 Pro</a></h5>
+						<p class="price">5299元火爆促销！</p>
+						<a href="#" class="pic"><img src="../img/pic1.jpg" alt=""></a>
+					</li>
+					<li>
+						<h5 class="name"><a href="#">惠普暗影精灵2 Pro</a></h5>
+						<p class="price">5299元火爆促销！</p>
+						<a href="#" class="pic"><img src="../img/pic1.jpg" alt=""></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 默认吸顶菜单 -->
+		<div class="occupy-position" style="display:none;"></div>
+		<div class="suction-tip">
+			<div class="today-tit clearfix">
+				<h3 class="fl">今日团</h3>
+				<ul class="style-list fr">
+					<li>
+						<a href="#">手机通讯<i>(51)</i></a>|
+					</li>
+					<li>
+						<a href="#">数码影像<i>(25)</i></a>|
+					</li>
+					<li>
+						<a href="#">笔记本/电脑<i>(33)</i></a>|
+					</li>
+					<li>
+						<a href="#">电脑外设<i>(16)</i></a>|
+					</li>
+					<li>
+						<a href="#">DIV主机/配件<i>(25)</i></a>|
+					</li>
+					<li>
+						<a href="#">家电/其他<i>(1)</i></a>|
+					</li>
+					<li>
+						<a href="#">智能生活<i>(0)</i></a>|
+					</li>
+				</ul>
+			</div>
+			<div class="suction-tip marginT">
+				<ul class="sorts clearfix">
+					<a href="#"><li class="default active">默认</li></a>
+					<a href="#"><li>最新团购</li></a>
+					<a href="#"><li>销量</li></a>
+					<a href="#"><li>价格</li></a>
+				</ul>
+			</div>
+		</div>
+		<ul class="commodity-list clearfix">
+			
+		</ul>
+	</div>
+	<!--底部-->
+	<div class="footer">
+		<div class="wrapper">
+			<ul class="footer-service clearfix">
+				<li class="ser-bg1">
+					<a href="#">
+						<p class="top">先行赔付</p>
+						<p class="below">权益受损先行赔付</p>
+					</a>
+				</li>
+				<li class="ser-bg2">
+					<a href="#">
+						<p class="top">正品保障</p>
+						<p class="below">权益受损先行赔付</p>
+					</a>
+				</li>
+				<li class="ser-bg3">
+					<a href="#">
+						<p class="top">无忧退换</p>
+						<p class="below">权益受损先行赔付</p>
+					</a>
+				</li>
+				<li class="ser-bg4">
+					<a href="#">
+						<p class="top">发票保障</p>
+						<p class="below">权益受损先行赔付</p>
+					</a>
+				</li>
+				<li class="ser-bg5">
+					<a href="#">
+						<p class="top">快递包邮</p>
+						<p class="below">满399快递包邮</p>
+					</a>
+				</li>
+				<li class="ser-bg6">
+					<a href="#">
+						<p class="top">急速发货</p>
+						<p class="below">24小时发货</p>
+					</a>
+				</li>
+			</ul>
+			<div class="footer-service-relate clearfix">
+				<dl class="cooperation">
+					<dt>商家合作</dt>
+					<dd>
+						<p>错过天猫？别再错过我们！</p>
+						<p>ZOL商城开启全新旅程！</p>
+						<a href="#" class="btn">
+							<span>关于入驻</span> >
+						</a>
+					</dd>
+				</dl>
+				<dl class="hotline">
+					<dt>400-688-1999</dt>
+					<dd>
+						<p>工作日 9:00 - 18:00</p>
+						<a href="#" class="weibo">关注新浪微博</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>购物指南</dt>
+					<dd>
+						<p>
+							<a href="#">账号注册</a>
+						</p>
+						<p>
+							<a href="#">购物流程</a>
+						</p>
+						<p>
+							<a href="#">付款方式</a>
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>售后服务</dt>
+					<dd>
+						<p>
+							<a href="#">先行赔付</a>
+						</p>
+						<p>
+							<a href="#">退款退货流程</a>
+						</p>
+						<p>
+							<a href="#">投诉举报</a>
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>商城保障</dt>
+					<dd>
+						<p>
+							<a href="#">正品保障</a>
+						</p>
+						<p>
+							<a href="#">物流配送</a>
+						</p>
+						<p>
+							<a href="#">24小时发货</a>
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>商家服务</dt>
+					<dd>
+						<p>
+							<a href="#">商家中心</a>
+						</p>
+						<p>
+							<a href="#">商城规则</a>
+						</p>
+						<p>
+							<a href="#">商家帮助</a>
+						</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="footer-nav-bar">
+			<div class="wrapper">
+				<div class="partners">
+					<span class="label">合作伙伴:</span>
+					<p>
+						<a href="#">华为商城</a>|
+						<a href="#">卷皮尺</a>|
+						<a href="#">中国电子银行网</a>|
+						<a href="#">电子商务平台</a>|
+						<a href="#">三帝贸易网</a>|
+						<a href="#">团购</a>|
+						<a href="#">家具网</a>|
+						<a href="#">手表品牌大全</a>|
+						<a href="#">钻石</a>|
+						<a href="#">伊秀女性网</a>|
+						<a href="#">电子产品世界</a>|
+						<a href="#">挖东西比价网</a>|
+						<a href="#">易购网</a>|
+						<a href="#">广告网</a>|
+						<a href="#">网上114</a>|
+					</p>
+				</div>
+				<div class="footer-nav">
+					<a href="#">中关村在线</a>|
+					<a href="#">ZOL商城</a>|
+					<a href="#">团购</a>|
+					<a href="#">经销商</a>|
+					<a href="#">产品报价</a>|
+					<a href="#">论坛</a>|
+					<a href="#">问答</a>|
+				</div>
+				<div class="copyright">
+					<a href="#">关于ZOL商城</a>|
+					<a href="#">帮助中心</a>|
+					<a href="#">联系我们</a>|
+					<a href="#">发展历程</a>|
+					<a href="#">媒体报道</a>|
+				</div>
+				<div class="copyright">
+					<span>©2016 中关村在线 版权所有. &nbsp;&nbsp;
+					<a href="#">京ICP证150096号</a> &nbsp;&nbsp; 
+					    京公网安备11010802020026号 &nbsp;&nbsp;<a href="#">京ICP备14061128号</a>&nbsp;&nbsp;网络文化经营许可证京网文[2016]1631-199</span>
+				</div>
+			</div>
+			<a href="#" class="wd">广告</a>
+		</div>
+	</div>
+
+
+</body>
+</html>

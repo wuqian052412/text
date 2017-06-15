@@ -1,0 +1,420 @@
+@charset "UTF-8";
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu { margin: 0; padding: 0; }
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details { display: block; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th { text-align: left; font-weight: normal; }
+
+html, body, fieldset, img, iframe, abbr { border: 0; }
+
+i, cite, em, var, address, dfn { font-style: normal; }
+
+[hidefocus], summary { outline: 0; }
+
+li { list-style: none; }
+
+h1, h2, h3, h4, h5, h6, small { font-size: 100%; }
+
+sup, sub { font-size: 83%; }
+
+pre, code, kbd, samp { font-family: inherit; }
+
+q:before, q:after { content: none; }
+
+textarea { overflow: auto; resize: none; }
+
+label, summary { cursor: default; }
+
+a, button { cursor: pointer; }
+
+del, ins, u, s, a, a:hover { text-decoration: none; }
+
+body, textarea, input, button, select, keygen, legend { font: 12px/1.14 'Microsoft YaHei',\5b8b\4f53; color: #333; outline: 0; }
+
+html body { font: 12px/1.14 'Microsoft YaHei',\5b8b\4f53; color: #333; outline: 0; }
+
+body { background: #fff; }
+
+img { vertical-align: middle; }
+
+/* 顶部 */
+.zc-topbar { height: 30px; font-size: 12px; /* overflow: hidden; */ background-color: #F5F5F5; border-bottom: 1px solid #E6E6E6; line-height: 30px; margin-bottom: 8px; }
+
+.wrapper { width: 1200px; margin: 0 auto; }
+
+.zc-login-info { float: left; }
+
+.zc-login-info .zc-back-home a { color: #000; }
+
+.zc-login-info a:hover { color: #CE1A1B; text-decoration: underline; }
+
+.zc-login-info .zc-login { margin-left: 20px; }
+
+.zc-login-info .zc-register { margin-left: 20px; }
+
+.zc-quick-menu { float: right; }
+
+.zc-quick-menu .active { background-color: #fff; }
+
+.zc-quick-menu li { float: left; padding: 0 10px; position: relative; }
+
+.zc-quick-menu li .zc-my-center-bd { z-index: 100; display: none; position: absolute; top: 29px; left: 0; padding: 3px 9px; width: 88px; border: 1px solid #ededed; background: #fff; }
+
+.zc-quick-menu li .zc-mobile-bd { z-index: 100; display: none; position: absolute; top: 29px; left: 0; padding: 20px; width: 130px; height: 130px; border: 1px solid #ededed; background: #fff; }
+
+.zc-quick-menu li .zc-service-tel { z-index: 100; display: none; position: absolute; top: 29px; right: 0; padding: 3px 9px; width: 80px; border: 1px solid #ededed; font: 12px/28px arial; text-align: right; background: #fff; }
+
+.zc-quick-menu li a { color: #000; }
+
+.zc-quick-menu li a:hover { color: #CE1A1B; text-decoration: underline; }
+
+/* 头部 */
+.header { height: 92px; }
+
+.header .logo { float: left; }
+
+.header .logo h1 { float: left; }
+
+.header .logo .mall-logo { display: block; width: 180px; height: 57px; background-image: url("../img/logo1_r2_c2.png"); }
+
+.header .logo .logo-right-box { float: left; height: 50px; border-left: 1px solid #eee; margin-left: 10px; }
+
+.header .logo .logo-right-box .tuan { width: 82px; height: 50px; color: #c40000; font-size: 24px; line-height: 50px; margin-left: 10px; }
+
+.header .search-box { float: left; padding: 12px 0 0 56px; }
+
+.header .search-box .search { position: relative; width: 536px; height: 32px; border: 2px solid #c40000; z-index: 3; }
+
+.header .search-box .search .search-text { padding: 6px 10px; width: 427px; height: 20px; font: 14px/20px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; color: #666; border: 0 none; outline: 0 none; }
+
+.header .search-box .search .search-btn { position: absolute; top: 0; right: 0; width: 89px; height: 32px; font: 16px/32px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; color: #fff; border: 0 none; background: #c40000; cursor: pointer; }
+
+.header .search-box .hot-search { padding: 7px 0 0; font: 12px/18px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; }
+
+.header .search-box .hot-search a { display: inline-block; margin: 0 15px 0 0; color: #999; }
+
+.header .search-box .hot-search a:hover { color: #f33; text-decoration: underline; }
+
+.header .ad-div { float: right; width: 180px; height: 60px; padding-top: 0; }
+
+.header .ad-div img { display: block; width: 180px; height: 60px; }
+
+/* 导航 */
+.nav-box { position: relative; z-index: 2; zoom: 1; margin: 0 auto 10px; padding: 0 0 2px 200px; height: 32px; width: 1000px; border-bottom: 2px solid #ce1a1b; }
+
+.nav-box .category-nav-container { position: absolute; top: 0; left: 0; width: 200px; }
+
+.nav-box .category-nav-container .category-nav-title { height: 34px; background: #ce1a1b; font: 14px/34px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; color: #fff; text-align: center; }
+
+.nav-box .category-nav-container .category-menu-nav { display: none; position: relative; zoom: 1; height: 449px; background-color: #b1191a; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container .active { background-color: #fff; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container .active .type { color: #000; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container .active .contain a { color: #000; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li { float: left; width: 165px; border-top: 1px solid #bd3b3c; border-left: 1px solid #b1191a; height: 63px; padding-left: 34px; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .type { height: 30px; line-height: 30px; position: relative; font-size: 14px; color: #fff; margin-top: 5px; background: url(http://icon.zol-img.com.cn/newshop/shop/index/item.png) no-repeat 147px 9px; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .contain { height: 20px; line-height: 20px; margin-left: -12px; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .contain a { float: left; font-size: 12px; color: #fff; margin-left: 12px; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .contain a:hover { color: #000; text-decoration: underline; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content { z-index: 10; display: none; position: absolute; top: 0; left: 200px; width: 1000px; background-color: #fff; border-right: 1px solid #c50505; border-bottom: 1px solid #c50505; min-height: 448px; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content .left { float: left; width: 746px; min-height: 368px; padding-bottom: 80px; position: relative; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content .left .service { margin: 16px 0 13px 0; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content .left .service dt { text-align: center; background: none; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content .left .service dt a { color: #00ae75; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content .left .service dd { margin-left: 105px; padding-bottom: 0; border-bottom: 0 none; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content .left .service dd a { padding-left: 28px; margin: 0 20px 0 0; position: relative; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content .left .service a { color: #00ae75; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content .left .brands-list { position: absolute; left: 30px; bottom: 10px; overflow: hidden; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content .left .brands-list li { float: left; border: 0 none; padding: 0; width: 118px; height: 60px; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content .left .brands-list li a { display: block; width: 116px; height: 58px; padding: 1px; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content .left .brands-list li a img { border: 0; width: 116px; height: 58px; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content dt { float: left; width: 105px; height: 26px; line-height: 26px; font-size: 12px; font-weight: bold; text-align: right; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content dt a { padding-right: 17px; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content dd { line-height: 26px; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content dd a { display: inline-block; }
+
+.nav-box .category-nav-container .category-menu-nav .menu-nav-container li .category-menu-content dl a { color: #333; }
+
+.nav-box .nav li { float: left; padding: 0 20px; height: 30px; font: 16px/30px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; }
+
+.nav-box .nav a { display: inline-block; color: #333; }
+
+.nav-box .nav a:hover { color: #f33; text-decoration: none; }
+
+.nav-box .nav-tips { position: absolute; top: 0; right: 0; font: 16px/30px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; color: #f33; }
+
+.nav-box .nav-tips a { color: #f33; }
+
+.nav-box .nav-tips a:hover { color: #c00; }
+
+/* 放大镜 */
+.zs-wrapper { margin: 0 auto; width: 1200px; }
+
+.zs-wrapper .zs-bread-crumbs { margin: 0 0 0 -8px; font: 12px/32px SimSun; color: #999; }
+
+.zs-wrapper .zs-bread-crumbs a, .zs-wrapper .zs-bread-crumbs span { margin: 0 8px; }
+
+.zs-wrapper .zs-bread-crumbs a { color: #333; }
+
+.zs-wrapper .zs-inner { border: 1px solid #ededed; /* overflow: hidden; */ }
+
+.zs-wrapper .zs-inner .zs-deal-detail { float: left; width: 1000px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus { float: left; padding: 10px 0 0 20px; width: 400px; position: relative; z-index: 8; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-big-pic a { cursor: crosshair; position: relative; display: block; outline: 0px; text-decoration: none; width: 400px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-big-pic a img { border: 0; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zoom1-big { width: 400px; height: 400px; position: absolute; top: 10px; left: 415px; overflow: hidden; display: none; border: 1px solid #ddd; background-color: white; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb { position: relative; zoom: 1; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list { position: relative; height: 70px; overflow: hidden; width: 400px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list ul { width: 415px; padding: 0 0 0 1px; overflow: hidden; zoom: 1; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list ul li { float: left; width: 70px; height: 70px; margin: 0 12px 0 0; position: relative; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list ul li img { display: block; padding: 9px 0; border: 0; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb .zs-action { padding: 25px 0; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb .zs-action .zs-collect, .zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb .zs-action .zs-complain { float: left; position: relative; margin: 0 15px 0 0; padding: 0 0 0 20px; line-height: 22px; color: #666; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb .zs-action .zs-share-box { float: left; position: relative; line-height: 22px; color: #666; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap { float: right; padding: 10px 20px 0 0; width: 530px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-commodity-title { display: block; margin-bottom: 10px; padding: 7px 0 0; font: 16px/22px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-commodity-title .subheading { display: block; color: #999; font-size: 14px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-group-box { height: 48px; background-color: #c00; padding: 0 10px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-group-box .range-logo { float: left; height: 48px; overflow: hidden; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-group-box .range-logo a { display: inline-block; height: 48px; color: #fff; vertical-align: middle; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-group-box .range-logo .mall-logo { width: 131px; text-align: center; font-size: 20px; line-height: 46px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-group-box .range-logo .group-logo { width: 44px; text-align: center; font-size: 20px; line-height: 46px; margin-left: 20px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-group-box .group-over-time { float: right; font-size: 14px; color: #fff; line-height: 48px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-price-panel { margin: 0 0 0; padding: 5px 10px; background: #f7f7f7; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-price-panel dl { padding: 0 0 0 75px; position: relative; zoom: 1; line-height: 30px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-price-panel dl dt { position: absolute; top: 0; left: 0; width: 65px; color: #666; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-price-panel dl dd { overflow: hidden; zoom: 1; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-price-panel dl dd .zs-price { float: left; margin: -2px 0 0; height: 32px; overflow: hidden; font-size: 16px; vertical-align: middle; color: #c00; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-price-panel dl dd .zs-price em { padding: 0 0 0 5px; font-family: tahoma; font-size: 30px; font-weight: bold; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-price-panel dl dd .original { font-size: 12px; text-decoration: line-through; color: #999; margin-left: 12px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-price-panel dl dd .save-icon { display: inline-block; height: 18px; line-height: 18px; padding: 0 3px; font-size: 12px; color: #fff; border-radius: 2px; background-color: #c00; margin-left: 8px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor { padding: 10px 0 20px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor dl { position: relative; zoom: 1; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor dl { margin: 0 10px; padding: 5px 0 0; z-index: 0; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor dl dt { top: 0; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor dt { position: absolute; top: 0; left: 0; height: 32px; line-height: 32px; color: #666; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor dd { padding: 0 0 0 65px; line-height: 32px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor dd .zs-freight-area { float: left; position: relative; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor dd .zs-freight-area .area-name { position: relative; display: inline-block; height: 23px; border: 1px solid #e6e6e6; padding: 0 20px 0 6px; line-height: 23px; cursor: pointer; background-color: #fff; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-evaluate { margin: 5px 10px 0; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-evaluate a { color: #333; padding: 0 10px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-service-bar { margin: 0 10px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-service-bar li { float: left; position: relative; zoom: 1; margin: 0 0 5px; padding: 0 0 0 28px; width: 82px; height: 24px; font: 12px/22px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner { margin: 10px 0px 15px; border-top: 1px solid #f2f2f2; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner a { color: #000; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner dd { padding-left: 75px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .groupware-type-box { height: 50px; position: relative; margin-top: 15px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .groupware-type-box .groupware-type { width: 460px; padding: 12px 60px 0 10px; background-color: #f7f7f7; /* position: absolute; */ top: 0; z-index: 1; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .groupware-type-box .groupware-type .show-more { height: 14px; line-height: 14px; padding-right: 17px; font-size: 12px; color: #999; position: absolute; right: 10px; top: 15px; background: url(http://icon.zol-img.com.cn/newshop/shop/detail/tuan/arrow.png) no-repeat right 4px; cursor: pointer; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .groupware-type-box .groupware-type dl { overflow: hidden; height: 35px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .groupware-type-box .groupware-type dt { color: #c00; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .groupware-type-box .groupware-type dd li { float: left; height: 28px; line-height: 28px; padding: 0 10px; border: 1px solid #e6e6e6; background-color: #fff; margin: 0 6px 8px 0; cursor: pointer; font-size: 12px; color: #333; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .groupware-type-box .groupware-type dd .active { border: 1px solid red; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-color-type { padding: 0 0 0 0; margin-top: 10px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-color-type span { font-size: 14px; float: left; margin-left: 10px; text-align: center; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-color-type span li { float: left; margin: 0 15px; padding: 5px; border: 1px solid #e6e6e6; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-color-type span .active { border: 1px solid red; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-suit { padding: 0 0 0 0; margin-top: 10px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-suit span { font-size: 14px; float: left; margin-left: 10px; text-align: center; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-suit span li { float: left; margin: 0 15px; padding: 5px; border: 1px solid #e6e6e6; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-suit span .active { border: 1px solid red; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-quantity { padding: 20px 0 0; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-quantity dt { top: 20px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-quantity dd { color: #999; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-quantity dd .amount-widget { float: left; margin: 0 10px 0 0; width: 102px; height: 28px; border: 1px solid #e6e6e6; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-quantity dd .amount-widget .zs-decrease, .zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-quantity dd .amount-widget .zs-increase { text-align: center; float: left; width: 28px; height: 28px; background-color: #f8f8f8; cursor: pointer; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-quantity dd .amount-widget .zs-no-decrease { background-position: 0 -197px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-quantity dd .amount-widget .zs-goods-number { float: left; width: 44px; height: 28px; text-align: center; font: 12px/28px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; border: 0 none; border-left: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6; color: #333; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-quantity dd .amount-widget .zs-increase { text-align: center; background-position: -32px -169px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-quantity dd .zs-part { float: left; padding: 0 10px 0 0; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-deal-btn { padding: 30px 0 0 65px; height: 50px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-deal-btn .zs-buy-now { width: 140px; height: 50px; color: #fff; background: #c00; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-deal-btn .zs-store-buy { width: 138px; height: 48px; border: 1px solid #ffd9d9; background-color: #ffeded; color: #c00; line-height: 48px; }
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-deal-btn .zs-buy-now, .zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner form .zs-deal-btn .zs-store-buy { float: left; margin: 0 10px 0 0; border-radius: 2px; font: 18px/50px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; text-align: center; }
+
+/* 底部 */
+.footer { margin: 30px 0 0; border-top: 1px solid #d9d9d9; }
+
+.footer .wrapper .footer-service { padding: 30px 0; overflow: hidden; }
+
+.footer .wrapper .footer-service li { position: relative; float: left; width: 200px; height: 50px; }
+
+.footer .wrapper .footer-service li a { display: block; height: 50px; padding-left: 60px; }
+
+.footer .wrapper .footer-service li a .top { font-size: 18px; height: 28px; line-height: 28px; color: #333; }
+
+.footer .wrapper .footer-service li a .below { font-size: 14px; height: 22px; line-height: 22px; color: #666; }
+
+.footer .wrapper .footer-service a { color: #333; }
+
+.footer .wrapper .footer-service-relate { padding: 20px 0; border-top: 1px solid #ededed; }
+
+.footer .wrapper .footer-service-relate .cooperation, .footer .wrapper .footer-service-relate .hotline { float: right; padding: 0 0 0 60px; }
+
+.footer .wrapper .footer-service-relate .cooperation dt, .footer .wrapper .footer-service-relate .hotline dt { padding: 0; font-size: 16px; }
+
+.footer .wrapper .footer-service-relate .cooperation dd, .footer .wrapper .footer-service-relate .hotline dd { font: 12px/28px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; }
+
+.footer .wrapper .footer-service-relate .cooperation { width: 145px; }
+
+.footer .wrapper .footer-service-relate .cooperation dd .btn { display: block; margin: 6px 0 0; width: 80px; height: 26px; font: 12px/26px SimSun; color: #fff; text-align: center; background: #f33; border-radius: 2px; }
+
+.footer .wrapper .footer-service-relate .cooperation dd .btn span { padding: 0 5px 0 0; }
+
+.footer .wrapper .footer-service-relate .cooperation dd .btn:hover { background: #c40000; color: #fff; text-decoration: none; }
+
+.footer .wrapper .footer-service-relate .hotline { width: 210px; }
+
+.footer .wrapper .footer-service-relate dt { font: bold 14px/28px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; color: #666; }
+
+.footer .wrapper .footer-service-relate dl { float: left; width: 175px; }
+
+.footer .wrapper .footer-service-relate dl dd p { font: 12px/28px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; }
+
+.footer .wrapper .footer-service-relate dl dd p a { color: #666; }
+
+.footer .footer-nav-bar { padding: 25px 0 30px; background: #2d2d2d; }
+
+.footer .footer-nav-bar .wrapper .partners { position: relative; zoom: 1; padding: 0 135px 0 55px; height: 48px; overflow: hidden; font: 12px/24px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; color: #666; }
+
+.footer .footer-nav-bar .wrapper .partners .label { position: absolute; top: 0; left: 0; color: #ccc; }
+
+.footer .footer-nav-bar .wrapper .partners p a { margin: 0 10px; color: #fff; white-space: nowrap; }
+
+.footer .footer-nav-bar .wrapper .footer-nav { margin: 0 0 0 -10px; padding: 7px 0 0; font: 12px/24px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; color: #666; }
+
+.footer .footer-nav-bar .wrapper .footer-nav a { margin: 0 10px; color: #fff; white-space: normal; word-break: keep-all; }
+
+.footer .footer-nav-bar .wrapper .copyright { margin: 0 0 0 -10px; padding: 20px 0 0; font: 12px/24px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; color: #666; }
+
+.footer .footer-nav-bar .wrapper .copyright a { margin: 0 10px; color: #999; white-space: normal; word-break: keep-all; }
+
+.footer .footer-nav-bar .wrapper .copyright span { padding: 0 0 0 15px; color: #999; }
+
+.footer .footer-nav-bar .wd { color: #fff; background: #666; border-radius: 3px; float: right; margin-right: 50px; padding: 0 8px; }
+
+.clone-img { position: absolute; }
+
+.ssaside { width: 50px; overflow: hidden; position: fixed; top: 20px; right: 0px; z-index: 100000000; background-color: #000; height: 100%; }
+
+.ssaside .aside { width: 50px; height: 100%; text-align: center; color: #fff; float: left; margin-right: 6px; }
+
+.ssaside .aside .yh { margin-top: 200px; display: block; padding: 5px; background: red; }
+
+.ssaside .aside .car { margin-top: 100px; display: block; padding: 5px; background: red; }
+
+.ssaside .cart-list { color: #fff; padding: 10px; padding-left: 50px; width: 200px; border: 1px solid #ddd; height: 100%; }
+
+.ssaside .cart-list h4 { position: relative; margin: 0; padding-bottom: 5px; border-bottom: 1px solid #ddd; font-size: 20px; text-align: center; }
+
+.ssaside .cart-list h4 button { position: absolute; right: 0; top: 0; }
+
+.ssaside .cart-list ul { max-height: 700px; overflow: hidden; }
+
+.ssaside .cart-list img { width: 60px; }
+
+.ssaside .cart-list li { position: relative; height: 150px; }
+
+.ssaside .cart-list .btn-close { position: absolute; top: 0; right: 0; padding: 5px; }
+
+.ssaside .cart-list .btn-close:hover { background-color: #f00; color: #fff; }
+
+.ssaside .cart-list .count { font-size: 14px; color: red; display: block; }

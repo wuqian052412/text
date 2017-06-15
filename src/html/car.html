@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" href="../css/car.css">
+	<link rel="stylesheet" href="../css/var.css">
+	<link rel="stylesheet" href="../lib/jquery-gdszoom/jquery.gdszoom.css">
+	<script src="../js/require.js" data-main="../js/car.js"></script>
+</head>
+<body>
+		<!-- header-top -->
+	<div class="zc-topbar">
+	    <div class="wrapper clearfix">
+            <div class="zc-login-info">
+                <span class="zc-back-home">
+               		 <a href="../index.html">商城首页</a>
+                </span>
+                <span class="zc-login">Hi~欢迎来到ZOL商城，请<a href="login.html">登录</a></span>      
+                <span class="zc-register">
+                <a href="register.html">免费注册</a>
+                </span>                    
+            </div>        
+            <ul class="zc-quick-menu">
+                <li>
+                	<a href="#">我的订单</a>
+                </li>            
+                <li class="zc-my-center">                
+                	<a href="#" class="zc-hd">买家中心<i class="ico"></i></a>                
+                    <div class="zc-my-center-bd" id="zc-my-center-bd" style="display: none;">                    
+                        <a href="#" style="display:none;">我的优惠券&nbsp;&nbsp;<em>8</em></a>                   
+                        <a href="#">关注的店铺&nbsp;&nbsp;<em id="focusShopNum">30</em></a>                   
+                        <a href="#">关注的商品&nbsp;&nbsp;<em id="focusGoodsNum">48</em></a>               
+                    </div>           
+                </li>            
+                    <li>
+                	<a href="#" id="shop-cart-num">购物车0件
+                	</a>
+                </li>            
+                <li>
+                	<a href="#">帮助中心</a>
+                </li>            
+                <li class="zc-separator">|</li>            
+                <li class="zc-mobile">                
+                    <a href="javascript:;" class="zc-hd zc-mobile-hd">手机商城<i class="ico"></i></a>                
+                    <div class="zc-mobile-bd" id="zc-mobile-bd" style="display: none;">
+                   		<img src="../img/01.jpg" width="130" height="130">
+                    </div>            
+                </li>           
+                <li><a href="#">中关村在线</a></li>           
+                <li><a href="#">商家入驻</a></li>            
+                <li class="lianxikefu">               
+                   <a href="#" class="zc-hd">联系客服<i class="ico"></i></a>           
+                   <div class="zc-service-tel" style="display:none;">400-688-1999</div>            
+                </li>        
+      		</ul>    
+       	</div>
+ 	</div>
+ 	<div class="main">
+ 		<div class="wrapper">
+ 			<div class="header clearfix">
+ 				<div class="head-l clearfix">
+ 					<a class="logo" href="../index.html">
+ 						<img src="../img/car-log.jpg" class="img1">
+						<img src="../img/car-log2.png" class="img2">
+ 					</a>
+ 				</div>
+ 				<div class="head-r">
+ 					<ul class="clearfix">
+ 						<li class="s1">加入购物车</li>
+ 						<li class="s2">下订单</li>
+ 						<li class="s3">去付款</li>
+ 						<li class="s4">确认收货</li>
+ 						<li class="s5">评价</li>
+ 					</ul>
+ 				</div>
+ 			</div>
+ 			<div class="car-top">
+ 				<div class="car-status clearfix">
+ 					<p>购物车状态 (<span><em class="number">1</em>/30</span>)</p>
+ 					<ul class="clearfix">
+ 						<li>总计(不含运费) :</li>
+						<li class="w2">￥<span class="to-price">0</span></li>
+						<li><button>去结算</button></li>
+ 					</ul>
+ 				</div>
+ 			</div>
+ 			<div class="content">
+ 				<div class="bar">
+ 					<ul class="clearfix">
+ 						<li class="d1">所选商品</li>
+ 						<li>单价(元)</li>
+ 						<li>数量</li>
+ 						<li>优惠</li>
+ 						<li>小计(元)</li>
+ 						<li>操作</li>
+ 					</ul>
+ 				</div>
+ 				<div class="list">
+ 					<form action="#" method="get">
+ 						<ul class="list-Num">
+	 						<!-- <li>
+	 							<p class="shop"><input type="checkbox" checked>店铺: <a href="#">汇通数码风暴专营店</a></p>
+	 							<div class="detail">
+	 								<ul class="clearfix">
+	 									<li class="s-info">
+	 								 									<input type="checkbox">
+	 								 									<a href="#" class="pic"><img src="../img/dt-min05.jpg" alt=""></a>
+	 																	<div class="info-box">
+	 								 										<a href="#"><p class="name">神舟 战神K610D-i7D4【神舟官方授权】I7+940M独立显卡游戏笔记本</p></a>
+	 								 										<p class="color">颜色: <span>灰色</span></p>
+	 								 										<p class="tao">套装: <span>官方标配</span></p>
+	 								 									</div>
+	 								 								</li>		 											 								
+	 									<li class="sprice"><span class="yj">3788.00</span><span class="xj">3499.00</span></li>
+	 									<li class="s-amount">
+	 										<div class="buy-num">
+	 											<a class="jian">-</a>
+	 										<input type="text" value="1">
+	 										<a class="jia">+</a>
+	 										</div>
+	 										
+	 									</li>
+	 									<li class="s-agio">
+	 										<span class="tuan">团购</span>
+	 										<span class="time">14小时15分42秒</span>
+	 									</li>
+	 									<li class="price"><span class="price1">3499</span></li>
+	 									<li class="del">
+	 								 									<a href="#"><span>移入收藏夹</span></a>
+	 								 									<a href="#"><span>删除</span></a>
+	 									</li>
+	 								</ul>
+	 							</div>
+	 						</li> -->
+ 						</ul>
+ 					</form>
+ 					<div class="total">
+ 						商品总价(不含运费): ￥<span class="to-price">0</span>
+ 					</div>
+ 					<div class="count"><a href="#"><span>去结算</span></a></div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+</body>
+</html>
