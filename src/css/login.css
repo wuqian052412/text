@@ -35,7 +35,7 @@ body, textarea, input, button, select, keygen, legend { font: 12px/1.14 'Microso
 
 html body { font: 12px/1.14 'Microsoft YaHei',\5b8b\4f53; color: #333; outline: 0; }
 
-body { background: #fff; }
+body, input { background: #fff; }
 
 img { vertical-align: middle; }
 
@@ -75,7 +75,7 @@ body, html { background: #fafafa; width: 100%; }
 
 .wrapper form .login-wrap .login-layer .login-content .form-item { position: relative; margin: 0 0 7px; padding: 8px 5px; height: 22px; border: 1px solid #ccc; }
 
-.wrapper form .login-wrap .login-layer .login-content .form-item .text { display: block; width: 278px; height: 22px; font: 14px/22px "Arial"; border: 0 none; }
+.wrapper form .login-wrap .login-layer .login-content .form-item input { display: block; width: 278px; height: 22px; font: 14px/22px "Arial"; border: 0 none; background-color: #fff !important; }
 
 .wrapper form .login-wrap .login-layer .login-content .form-item .account-list { position: absolute; top: 38px; left: -1px; width: 288px; border: 1px solid #ccc; background: #fff; }
 
@@ -85,7 +85,7 @@ body, html { background: #fafafa; width: 100%; }
 
 .wrapper form .login-wrap .login-layer .login-content .form-other a { float: right; }
 
-.wrapper form .login-wrap .login-layer .login-content .login-layer-btn, .wrapper form .login-wrap .login-layer .login-content .submit-loading { display: block; margin: 0 0 10px; width: 290px; height: 40px; font: bold 14px/40px "Arial"; color: #fff; text-align: center; border: 0 none; background-color: #ccc; }
+.wrapper form .login-wrap .login-layer .login-content .login-layer-btn, .wrapper form .login-wrap .login-layer .login-content .submit-loading { display: block; margin: 0 0 10px; width: 290px; height: 40px; font: bold 14px/40px "Arial"; color: #fff; text-align: center; border: 0 none; background-color: red; }
 
 .wrapper form .login-wrap .login-layer .collaborate { width: 290px; text-align: center; margin-top: 15px; color: #666666; }
 
@@ -97,7 +97,7 @@ body, html { background: #fafafa; width: 100%; }
 
 .wrapper form .login-wrap .login-layer .collaborate .xian:last-child { margin-left: 9px; }
 
-.wrapper form .login-wrap .login-layer .login-foot { margin: 10px 0 0; /* .weibo{ background-position: 0 -82px;} .qq {background-position: -39px -82px;} .zhifubao {background-position: -78px -82px;} .baidu {background-position: -117px -82px;} */ }
+.wrapper form .login-wrap .login-layer .login-foot { margin: 10px 0 0; }
 
 .wrapper form .login-wrap .login-layer .login-foot .weixin { float: left; margin: 0 12px 0 25px; width: 38px; height: 38px; /* text-indent: -9999em; */ overflow: hidden; color: #000; /* background: url(http://icon.zol-img.com.cn/newshop/login/bgs2.png) 0 0 no-repeat; */ }
 

@@ -12,7 +12,7 @@ sup,sub{font-size:83%;}
 pre,code,kbd,samp{font-family:inherit;}
 q:before,q:after{content:none;}
 textarea{overflow:auto;resize:none;}
-label,summary{cursor:default;}
+label,summary{cursor:default;color:red;}
 a,button{cursor:pointer;}
 del,ins,u,s,a,a:hover{text-decoration:none;}
 body,textarea,input,button,select,keygen,legend{font:12px/1.14 'Microsoft YaHei',\5b8b\4f53;color:#333;outline:0;}
@@ -38,7 +38,7 @@ img{vertical-align: middle;}
 .register-wrap {padding: 0 0 100px;border: 1px solid #e6e6e6;width: 980px;margin: auto;
 	.title {padding: 16px 0 16px 90px;background: #fafafa;font: 18px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";color: #999;}
 	form{
-		.register-module {float: left;padding: 30px 0 0 89px;width: 500px;
+		.register-module {float: left;padding: 30px 0 0 89px;width: 800px;
 			.register-tab {height: 39px;border-bottom: 1px solid #e6e6e6;
 				li {float: left;position: relative;width: 250px;border: 1px solid #e6e6e6;border-bottom: 0 none;text-align: center;}
 				.current {margin: 0 -1px -1px;padding: 0 0 2px;border-top: 2px solid #e02d2d;background: #fff;cursor: default;
@@ -47,10 +47,8 @@ img{vertical-align: middle;}
 			}
 			.register-phone-number {padding: 30px 0 0;
 				.register-form {position: relative;margin: 0 0 42px;padding: 0 0 0 83px;zoom: 1;
-					label {position: absolute;top: 0;left: 0;width: 83px;font: 14px/40px "Arial";text-align: right;color: #666;}
-					input{display: block;margin: 0 10px 0 0;padding: 8px 5px;width: 278px;height: 22px;border: 1px solid #ccc;}
+					input{margin: 0 10px 0 0;padding: 8px 5px;width: 278px;height: 22px;border: 1px solid #ccc;}
 				}
-				/* .tips{position: absolute;top: 47px;left: 83px;color: #aaa;} */
 				.agreement {display: block;padding: 0 0 0 83px;height: 32px;font: 12px/32px "Arial";color: #999;
 					input {margin: 0 8px 0 0;}
 					a {color: #134ba0;text-decoration: none;}

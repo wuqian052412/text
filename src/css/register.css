@@ -25,7 +25,7 @@ q:before, q:after { content: none; }
 
 textarea { overflow: auto; resize: none; }
 
-label, summary { cursor: default; }
+label, summary { cursor: default; color: red; }
 
 a, button { cursor: pointer; }
 
@@ -59,7 +59,7 @@ img { vertical-align: middle; }
 
 .register-wrap .title { padding: 16px 0 16px 90px; background: #fafafa; font: 18px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1"; color: #999; }
 
-.register-wrap form .register-module { float: left; padding: 30px 0 0 89px; width: 500px; }
+.register-wrap form .register-module { float: left; padding: 30px 0 0 89px; width: 800px; }
 
 .register-wrap form .register-module .register-tab { height: 39px; border-bottom: 1px solid #e6e6e6; }
 
@@ -69,13 +69,11 @@ img { vertical-align: middle; }
 
 .register-wrap form .register-module .register-tab .current span { color: #c00; line-height: 36px; padding: 0 0 0 20px; display: inline-block; font: 18px/38px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1"; }
 
-.register-wrap form .register-module .register-phone-number { padding: 30px 0 0; /* .tips{position: absolute;top: 47px;left: 83px;color: #aaa;} */ }
+.register-wrap form .register-module .register-phone-number { padding: 30px 0 0; }
 
 .register-wrap form .register-module .register-phone-number .register-form { position: relative; margin: 0 0 42px; padding: 0 0 0 83px; zoom: 1; }
 
-.register-wrap form .register-module .register-phone-number .register-form label { position: absolute; top: 0; left: 0; width: 83px; font: 14px/40px "Arial"; text-align: right; color: #666; }
-
-.register-wrap form .register-module .register-phone-number .register-form input { display: block; margin: 0 10px 0 0; padding: 8px 5px; width: 278px; height: 22px; border: 1px solid #ccc; }
+.register-wrap form .register-module .register-phone-number .register-form input { margin: 0 10px 0 0; padding: 8px 5px; width: 278px; height: 22px; border: 1px solid #ccc; }
 
 .register-wrap form .register-module .register-phone-number .agreement { display: block; padding: 0 0 0 83px; height: 32px; font: 12px/32px "Arial"; color: #999; }
 

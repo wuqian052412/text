@@ -18,11 +18,11 @@
 
 	// 使用查询结果集
 	$rows = $res->fetch_all(MYSQLI_ASSOC);
-
+	/*echo json_encode($rows);*/
 	// print_r($rows);
 	// in_array在多维数组时不可这么用（一维数组可以）
 	if(in_array($arr, $rows)){
-		echo 'ok';
+		 echo 'ok';
 	}
 
 

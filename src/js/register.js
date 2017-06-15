@@ -1,5 +1,6 @@
 ;require(['config'],function(){
-	require(['jquery'],function($){
+	require(['jquery','validate','messages'],function($,validate,messages){
+		
 		// 阅读并同意必须勾选
 		var $checkbox = $(':checkbox');
 		var $btn = $('button');
@@ -13,6 +14,32 @@
 			}
 		});
 
+		$('form').validate({
+                // 验证规则
+                rules:{
+                    username:{
+                        required:true,
+                        rangelength:[6,12]
+                    },
+                    password:{
+                        required:true,
+                        rangelength:[6,12]
+                    },
+                    email:{
+                        email:true
+                    },
+                    mobile:{
+                        number:true
+                    }
+                },
+
+                // 自定义提示
+                messages:{
+                    username:{
+                        required:'这是必填项'
+                    }
+                }
+            });
 
 		var $btn = $('.register-btn');
 		// 点击提交传递信息到后台
@@ -34,7 +61,6 @@
 				alert('用户名密码不能为空值');
 			}
 			else{
-
 				$.ajax({
 					url:'../api/reg.php',
 					data:{
@@ -52,6 +78,8 @@
 				});
 			}
 
-		})
+		});
+
+		 
 	});
 });

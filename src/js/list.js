@@ -111,6 +111,7 @@ require(['config'],function(){
 				`
 			}).join('');
 			$goodslist.html(html);
+			//设置懒加载，引入懒加载插件
 			$('.lazy').lazyload({effect:'slideDown',threshold:10});
 		}
 

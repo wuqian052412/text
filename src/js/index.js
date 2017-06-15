@@ -1,5 +1,9 @@
 require(['config'],function(){
 	require(['jquery','common','TTCarousel'],function($,com,Carousel){
+
+		var username =location.search.slice(10);
+		var $deng =$('.zc-login').find('a');
+		$deng.html(username);
 		$('.banner').TTCarousel({
 				width:740,
 				height:290,
@@ -62,9 +66,6 @@ require(['config'],function(){
 				})
 			}
 
-
-
-
 				//首页1楼商品分类tab切换
 				var $tabs = $('.tab').children('li');
 				var $items = $('.contain').children('li');
@@ -95,7 +96,7 @@ require(['config'],function(){
 		var $h =$('.countdown').children().find('.h');
 		var $m =$('.countdown').children().find('.m');
 		var $s =$('.countdown').children().find('.s');
-		console.log($h)
+		/*console.log($h)*/
 		// 1）设置秒杀活动的开始时间startTime
 		var startTime = Date.parse('2017-6-19 14:54:59');
 		var timer=setInterval(showtime,1000);

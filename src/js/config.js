@@ -10,12 +10,16 @@ require.config({
       'gdszoom': '../lib/jquery-gdszoom/jquery.gdszoom',
       'TTCarousel': '../lib/jquery-TTCarousel/jquery-TTCarousel',
       'common':'../js/common',
-      'lazyload':'../lib/jquery.lazyload.min'
+      'lazyload':'../lib/jquery.lazyload.min',
+      'validate':'../lib/jquery-validate/jquery.validate',
+      'messages':'../lib/jquery-validate/localization/messages_zh'
     },
     shim:{
       'gdszoom':['jquery'],
        'TTCarousel':['jquery'],
        'common':['jquery'],
-       'lazyload':['jquery']
+       'lazyload':['jquery'],
+       'validate':['jquery'],
+       'messages':['validate']
     }
 });
