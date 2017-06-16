@@ -58,7 +58,7 @@ require(['config'],function(){
 	    			// 删除商品
 				var dels =$('.del').children().eq(1).find('span');
 				dels.on('click' ,function(){
-
+					window.location.href = "../html/car.html";
 					var currentLi = $(this).parents('.detail').parent('li');
 
 					var guid = Number(currentLi.attr('guid'));
@@ -90,7 +90,6 @@ require(['config'],function(){
 		            $(this).parent().children().eq(1).val(parseInt($(this).parent().children().eq(1).val())+1);
 		            if($(this).parent().children().eq(1).val()>66){
 		                $(this).parent().children().eq(1).val(66);
-		               /* $(this).total();*/
 		            }
 		       });
 				

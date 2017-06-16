@@ -330,7 +330,7 @@ require(['config'],function(){
             function show(temp){
                 // 绑定事件
                 temp.on('click',function(){
-                    $(this).addClass('active').siblings().removeClass('active');;
+                    $(this).addClass('active').siblings().removeClass('active');
                 })
             };
            /* 获取团购信息*/

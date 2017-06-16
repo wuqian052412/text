@@ -75,7 +75,7 @@ require(['config'],function(){
 		for(var i=0;i<$tabs.length;i++){
 			$tabs.eq(i).on('mouseenter',function(){
 				var index = i;
-				console.log(index)
+				/*console.log(index)*/
 				$(this).addClass('cur').siblings().removeClass('cur');
 				/*$items.eq(index).show().siblings().hide();
 					*/
