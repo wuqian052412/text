@@ -3,12 +3,11 @@
 		
 		// 阅读并同意必须勾选
 		var $checkbox = $(':checkbox');
-		var $btn = $('button');
+		var $btn = $('.register-btn');
 		$btn.attr('title','注册前必须同意协议');
 		$checkbox.on('click',function(){
 			if(this.checked){
 				$btn.prop('disabled',false).removeClass('no');
-				/*$btn.css({'background-color':'red'});*/
 			}else{
 				$btn.prop('disabled',true).addClass('no');
 			}
@@ -41,17 +40,16 @@
                 }
             });
 
-		var $btn = $('.register-btn');
+		/*var $btn = $('.register-btn');*/
 		// 点击提交传递信息到后台
 		$btn.on('click',function(){
 			
-			console.log(555)
 			var $username = $('#number').val();
 			var $password = $('#password').val();
 			var $sure = $('#repassword').val();
 
 			if($password != $sure){
-				$('#sure').val('');
+				$('#repassword').val('');
 				$('#password').val('');
 				alert('两次密码输入不一致，请重新输入');
 
@@ -72,7 +70,8 @@
 							alert('恭喜您注册成功，赶紧登陆吧！');
 						}else if(res == '已经存在'){
 							alert('用户名已经存在，请另起一个用户名');
-							$(':input').val('');
+							var mas =$('.register-form').find('input');
+							$(mas).val('');
 						}
 					}
 				});

@@ -1,9 +1,10 @@
 require(['config'],function(){
 	require(['jquery','common','TTCarousel'],function($,com,Carousel){
-
+		if(location.search){
 		var username =location.search.slice(10);
 		var $deng =$('.zc-login').find('a');
 		$deng.html(username);
+		}
 		$('.banner').TTCarousel({
 				width:740,
 				height:290,
